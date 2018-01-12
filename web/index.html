@@ -1,0 +1,20 @@
+<html lang="fr" ng-app="jira-app">
+    <head>
+        <meta charset="utf-8" />
+        <title>KSIOP JIRA For DEV</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/vendor/angular.js"></script>
+        <script src="js/jira-app.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Gestion des tickets JIRA</h1>
+            <section ng-controller="jiraCtrl">
+                <form id="jira-form" ng-submit="addTodo()">
+                    <input id="new-todo" placeholder="Tâche a faire" ng-model="newTodo" />
+                </form>
+            </section>
+        </header>
+    </body>
+</html>
